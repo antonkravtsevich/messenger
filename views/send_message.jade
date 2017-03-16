@@ -1,0 +1,9 @@
+doctype html
+html
+    head
+        title Message send
+    body
+        form(method="post", action="/api/messages")
+            input(type="text", name="sender")
+            input(type="text", name="text")
+            input(type="submit", value="Send")

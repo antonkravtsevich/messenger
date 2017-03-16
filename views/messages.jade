@@ -1,0 +1,18 @@
+mixin show_messages(messages)
+    each message in messages
+        b
+            message.sender
+        br
+        message.text
+        br
+        message.date
+        br
+        br
+
+
+doctype html
+html
+    head
+        title messages
+    body
+        +show_messages(messages)
